@@ -1,9 +1,9 @@
 """
 Formula 1 Race Intelligence Dashboard - Flask Application Engine
 ================================================================
-Author / Lead Developer: Atharv Prakash Malviya
-Tableau Public Profile : atharv malviya
-Published Workbook     : F1 Race Intelligence Dashboard_2
+Author / Lead Developer: Kushagra Khatri
+Tableau Public Profile : kushagra khatri
+Published Workbook     : F1RACEStory
 Championship Story     : Formula 1 Race Intelligence: From Global Overview to Championship Success
 
 This module serves the interactive Formula 1 Race Intelligence web application,
@@ -33,15 +33,17 @@ app = Flask(
 # CONFIGURATION SETTINGS & TABLEAU PUBLIC URLS
 # ==============================================================================
 CONFIG = {
-    "AUTHOR_NAME": "Atharv Prakash Malviya",
-    "AUTHOR_HANDLE": "atharv malviya",
-    "WORKBOOK_NAME": "F1 Race Intelligence Dashboard_2",
+    "AUTHOR_NAME": "Kushagra Khatri",
+    "AUTHOR_HANDLE": "kushagra khatri",
+    "WORKBOOK_NAME": "F1RACEStory",
     "DASHBOARD_SHEET": "FORMULA 1 RACE INTELLIGENCE DASHBOARD",
     "STORY_SHEET": "Formula 1 Race Intelligence: From Global Overview to Championship Success",
     
-    # Live Tableau Public URLs provided by Atharv Prakash Malviya
-    "TABLEAU_DASHBOARD_URL": "https://public.tableau.com/views/F1RaceIntelligenceDashboard_2/FORMULA1RACEINTELLIGENCEDASHBOARD?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
-    "TABLEAU_STORY_URL": "https://public.tableau.com/shared/H8573444D?:display_count=n&:origin=viz_share_link",
+    # Live Tableau Public URLs provided by Kushagra Khatri
+    "TABLEAU_DASHBOARD_URL": "https://prod-in-a.online.tableau.com/#/site/en25cs3090103-eee6cffe8d/views/F1RACEStory/FORMULA1RACEINTELLIGENCEDASHBOARD?:iid=1",
+    "TABLEAU_STORY_URL": "https://prod-in-a.online.tableau.com/#/site/en25cs3090103-eee6cffe8d/views/F1RACEStory/Formula1RaceIntelligenceFromGlobalOverviewtoChampionshipSuccess?:iid=2",
+    "TABLEAU_DASHBOARD_EMBED_URL": "https://prod-in-a.online.tableau.com/t/en25cs3090103-eee6cffe8d/views/F1RACEStory/FORMULA1RACEINTELLIGENCEDASHBOARD?:embed=yes&:showVizHome=no&:toolbar=yes&:tabs=no&:showAppBanner=false",
+    "TABLEAU_STORY_EMBED_URL": "https://prod-in-a.online.tableau.com/t/en25cs3090103-eee6cffe8d/views/F1RACEStory/Formula1RaceIntelligenceFromGlobalOverviewtoChampionshipSuccess?:embed=yes&:showVizHome=no&:toolbar=yes&:tabs=no&:showAppBanner=false",
     
     # 4 Core KPI Ground Truth
     "KPIS": {
@@ -145,6 +147,8 @@ def index():
         workbook_name=CONFIG["WORKBOOK_NAME"],
         tableau_dashboard_url=CONFIG["TABLEAU_DASHBOARD_URL"],
         tableau_story_url=CONFIG["TABLEAU_STORY_URL"],
+        tableau_dashboard_embed_url=CONFIG.get("TABLEAU_DASHBOARD_EMBED_URL", CONFIG["TABLEAU_DASHBOARD_URL"]),
+        tableau_story_embed_url=CONFIG.get("TABLEAU_STORY_EMBED_URL", CONFIG["TABLEAU_STORY_URL"]),
         kpis=CONFIG["KPIS"],
         dimensions=CONFIG["DIMENSIONS"],
         story_scenes=CONFIG["STORY_SCENES"]
@@ -224,10 +228,9 @@ def serve_root_static(filename):
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
-    print(f"================================================================")
-    print(f"🏎️ FORMULA 1 RACE INTELLIGENCE DASHBOARD")
+    print("================================================================")
+    print("   FORMULA 1 RACE INTELLIGENCE DASHBOARD")
     print(f"   Lead Architect : {CONFIG['AUTHOR_NAME']}")
     print(f"   Tableau Public : {CONFIG['AUTHOR_HANDLE']}")
     print(f"   Listening on   : http://127.0.0.1:{port}")
-    print(f"================================================================")
     app.run(host='0.0.0.0', port=port, debug=True)

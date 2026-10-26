@@ -1,7 +1,7 @@
 @echo off
 echo ================================================================
 echo  Formula 1 Race Intelligence Dashboard - Flask Web Server
-echo  Author: Atharv Prakash Malviya
+echo  Author: Kushagra Khatri
 echo ================================================================
 cd /d "%~dp0"
 if exist requirements.txt (

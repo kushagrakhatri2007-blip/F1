@@ -7,13 +7,13 @@
 | Project Metadata Field | Implementation Detail |
 | :--- | :--- |
 | **Project Title** | Formula 1 Race Intelligence Dashboard |
-| **Author & Lead Developer** | **Atharv Prakash Malviya** |
-| **Tableau Public Profile** | `atharv malviya` ([Profile URL](https://public.tableau.com/app/profile/atharv.malviya)) |
-| **Published Workbook Name** | `F1 Race Intelligence Dashboard_2` |
+| **Author & Lead Developer** | **Kushagra Khatri** |
+| **Tableau Public Profile** | `kushagra khatri` ([Profile URL](https://prod-in-a.online.tableau.com/#/site/en25cs3090103-eee6cffe8d/views/F1RACEStory/FORMULA1RACEINTELLIGENCEDASHBOARD?:iid=1)) |
+| **Published Workbook Name** | `F1RACEStory` |
 | **Dashboard Sheet Name** | `FORMULA 1 RACE INTELLIGENCE DASHBOARD` |
 | **Story Sheet Name** | `Formula 1 Race Intelligence: From Global Overview to Championship Success` (9 scenes) |
-| **Published Dashboard URL** | [Tableau Public Live Dashboard](https://public.tableau.com/views/F1RaceIntelligenceDashboard_2/FORMULA1RACEINTELLIGENCEDASHBOARD?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) |
-| **Published Story URL** | [Tableau Public Live Story](https://public.tableau.com/shared/H8573444D?:display_count=n&:origin=viz_share_link) |
+| **Published Dashboard URL** | [Tableau Public Live Dashboard](https://prod-in-a.online.tableau.com/#/site/en25cs3090103-eee6cffe8d/views/F1RACEStory/FORMULA1RACEINTELLIGENCEDASHBOARD?:iid=1) |
+| **Published Story URL** | [Tableau Public Live Story](https://prod-in-a.online.tableau.com/#/site/en25cs3090103-eee6cffe8d/views/F1RACEStory/Formula1RaceIntelligenceFromGlobalOverviewtoChampionshipSuccess?:iid=2) |
 | **Dataset Source** | `F1 Racing Project Dataset.xlsx` (5 connected sheets, ~13,750 rows, 17 seasons: 2010–2026) |
 | **Web Service Stack** | Python 3.x, Flask, Jinja2, HTML5, CSS3, ES6+ Vanilla JS, Chart.js 4.4 |
 | **Date of Submission** | October 2026 |
@@ -47,7 +47,7 @@ Historically, motorsport performance data is scattered across disparate tables, 
 * **Disconnected User Experience**: Standalone BI workbooks frequently exist in isolation, lacking a unified command terminal that combines executive KPI summaries, responsive web embeds, and deep technical documentation.
 
 ### 1.3 The Solution: Formula 1 Race Intelligence
-Developed by **Atharv Prakash Malviya**, the **Formula 1 Race Intelligence** platform delivers an end-to-end telemetry analytics ecosystem. By combining Tableau Public's visual engine with a Python Flask service layer and a dark broadcast-aesthetic web interface, the system transforms **6,464 race outcomes across 17 seasons (2010–2026)** into executive-grade visual intelligence.
+Developed by **Kushagra Khatri**, the **Formula 1 Race Intelligence** platform delivers an end-to-end telemetry analytics ecosystem. By combining Tableau Public's visual engine with a Python Flask service layer and a dark broadcast-aesthetic web interface, the system transforms **6,464 race outcomes across 17 seasons (2010–2026)** into executive-grade visual intelligence.
 
 ---
 
@@ -163,7 +163,7 @@ INDEX() <= [Top N Parameter]
 
 ## 5. Detailed Breakdown of the 9 Tableau Visualizations
 
-The published workbook **`F1 Race Intelligence Dashboard_2`** contains **9 unique, purpose-built visualizations**:
+The published workbook **`F1RACEStory`** contains **9 unique, purpose-built visualizations**:
 
 ```
 Visualizations Architecture
@@ -285,7 +285,7 @@ The dashboard follows the official **Formula 1 Broadcast & Telemetry Style Guide
 ### 6.2 Layout Wireframe
 ```
 +-----------------------------------------------------------------------------+
-| [F1 LOGO] FORMULA 1 RACE INTELLIGENCE DASHBOARD   | Author: Atharv Malviya |
+| [F1 LOGO] FORMULA 1 RACE INTELLIGENCE DASHBOARD   | Author: Kushagra Khatri |
 +-----------------------------------------------------------------------------+
 | KPI 1: Teams (10) | KPI 2: Seasons (17) | KPI 3: Outcomes (6464) | KPI 4: Circuits (29) |
 +-----------------------------------------------------------------------------+
@@ -366,11 +366,11 @@ e:\F1\F1-AI
 ### 9.2 Centralized URL Configuration in `app.py`
 ```python
 CONFIG = {
-    "AUTHOR_NAME": "Atharv Prakash Malviya",
-    "AUTHOR_HANDLE": "atharv malviya",
-    "WORKBOOK_NAME": "F1 Race Intelligence Dashboard_2",
-    "TABLEAU_DASHBOARD_URL": "https://public.tableau.com/views/F1RaceIntelligenceDashboard_2/FORMULA1RACEINTELLIGENCEDASHBOARD?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
-    "TABLEAU_STORY_URL": "https://public.tableau.com/shared/H8573444D?:display_count=n&:origin=viz_share_link",
+    "AUTHOR_NAME": "Kushagra Khatri",
+    "AUTHOR_HANDLE": "kushagra khatri",
+    "WORKBOOK_NAME": "F1RACEStory",
+    "TABLEAU_DASHBOARD_URL": "https://prod-in-a.online.tableau.com/#/site/en25cs3090103-eee6cffe8d/views/F1RACEStory/FORMULA1RACEINTELLIGENCEDASHBOARD?:iid=1",
+    "TABLEAU_STORY_URL": "https://prod-in-a.online.tableau.com/#/site/en25cs3090103-eee6cffe8d/views/F1RACEStory/Formula1RaceIntelligenceFromGlobalOverviewtoChampionshipSuccess?:iid=2",
     "KPIS": {
         "competing_teams": 10,
         "seasons_in_play": 17,
@@ -413,14 +413,14 @@ CONFIG = {
 2. Construct the 9 narrative scenes sequentially.
 3. Write analytical captions summarizing each scene's telemetry findings.
 
-### Step 5: Publishing to Tableau Public
+### Step 5: Publishing to Tableau Cloud / Public
 1. Click **Server -> Tableau Public -> Save to Tableau Public As...**.
-2. Sign in as **`atharv malviya`**.
-3. Save workbook as **`F1 Race Intelligence Dashboard_2`**.
+2. Sign in as **`kushagra khatri`**.
+3. Save workbook as **`F1RACEStory`**.
 4. Set visibility settings to Public and enable interactive toolbars.
 5. Retrieve published URLs:
-   * Dashboard: `https://public.tableau.com/views/F1RaceIntelligenceDashboard_2/FORMULA1RACEINTELLIGENCEDASHBOARD...`
-   * Story: `https://public.tableau.com/shared/H8573444D...`
+   * Dashboard: https://prod-in-a.online.tableau.com/#/site/en25cs3090103-eee6cffe8d/views/F1RACEStory/FORMULA1RACEINTELLIGENCEDASHBOARD?:iid=1
+   * Story: https://prod-in-a.online.tableau.com/#/site/en25cs3090103-eee6cffe8d/views/F1RACEStory/Formula1RaceIntelligenceFromGlobalOverviewtoChampionshipSuccess?:iid=2
 
 ### Step 6: Web Application Integration
 1. Configure URLs in `app.py` and `static/js/script.js`.
@@ -433,8 +433,8 @@ CONFIG = {
 
 | Evaluation Criterion | Implementation Status | Evidence / Verification |
 | :--- | :---: | :--- |
-| **Author Attribution** | Verified | **Atharv Prakash Malviya** credited across navbar, hero, cards, footer, APIs, and docs. |
-| **Live Tableau Integration**| Verified | Linked to `atharv malviya` workbook `F1 Race Intelligence Dashboard_2`. |
+| **Author Attribution** | Verified | **Kushagra Khatri** credited across navbar, hero, cards, footer, APIs, and docs. |
+| **Live Tableau Integration**| Verified | Linked to `kushagra khatri` workbook `F1RACEStory`. |
 | **Dataset Completeness** | Verified | 6,464 race outcomes across 17 seasons, 29 circuits, 10 teams. |
 | **9 Visualizations** | Verified | KPI cards, Mapbox map, Reliability, Top N, Team rank, Championship, Tyre, Country, Podiums. |
 | **9-Scene Story** | Verified | 9 interactive chapters with dynamic context-aware telemetry captions. |
@@ -443,4 +443,4 @@ CONFIG = {
 | **Offline Compatibility** | Verified | Standalone `index.html` runs offline with pre-compiled `data.js`. |
 
 ### Conclusion
-The **Formula 1 Race Intelligence Dashboard** successfully demonstrates how enterprise-grade business intelligence and modern web engineering can turn complex sports telemetry into clear, strategic narratives. Developed by **Atharv Prakash Malviya**, the platform stands as an authoritative, broadcast-ready analytics deliverable.
+The **Formula 1 Race Intelligence Dashboard** successfully demonstrates how enterprise-grade business intelligence and modern web engineering can turn complex sports telemetry into clear, strategic narratives. Developed by **Kushagra Khatri**, the platform stands as an authoritative, broadcast-ready analytics deliverable.

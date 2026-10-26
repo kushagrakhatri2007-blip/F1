@@ -1,15 +1,15 @@
 /**
  * FORMULA 1 RACE INTELLIGENCE - INTERACTIVE JAVASCRIPT
  * Comprehensive Frontend Engine & Telemetry Visualizer
- * Developed by: Atharv Prakash Malviya (Tableau Public: atharv malviya)
+ * Developed by: Kushagra Khatri (Tableau Public: kushagra khatri)
  */
 
 // =============================================================================
 // 1. TABLEAU PUBLIC EMBED CONFIGURATION
-// Configured for Atharv Prakash Malviya's Published Tableau Public Workbooks
+// Configured for Kushagra Khatri's Published Tableau Public Workbooks
 // =============================================================================
-const DASHBOARD_URL = "https://public.tableau.com/views/F1RaceIntelligenceDashboard_2/FORMULA1RACEINTELLIGENCEDASHBOARD?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link";
-const STORY_URL = "https://public.tableau.com/shared/H8573444D?:display_count=n&:origin=viz_share_link";
+const DASHBOARD_URL = "https://prod-in-a.online.tableau.com/#/site/en25cs3090103-eee6cffe8d/views/F1RACEStory/FORMULA1RACEINTELLIGENCEDASHBOARD?:iid=1";
+const STORY_URL = "https://prod-in-a.online.tableau.com/#/site/en25cs3090103-eee6cffe8d/views/F1RACEStory/Formula1RaceIntelligenceFromGlobalOverviewtoChampionshipSuccess?:iid=2";
 
 // 9 Story scenes definitions for interactive chapter navigator
 const STORY_POINTS_DATA = [
@@ -282,7 +282,11 @@ function initCounters() {
 // =============================================================================
 function formatTableauEmbedUrl(url) {
   if (!url) return "";
-  const base = url.split("?")[0].replace(/\/+$/, "");
+  let base = url.split("?")[0].replace(/\/+$/, "");
+  // Support Tableau Cloud / Online URL structure by converting /#/site/ to /t/
+  if (base.includes("/#/site/")) {
+    base = base.replace("/#/site/", "/t/");
+  }
   return `${base}?:embed=yes&:showVizHome=no&:toolbar=yes&:tabs=no&:showAppBanner=false`;
 }
 

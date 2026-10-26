@@ -117,7 +117,7 @@
             <span class="author-sep">•</span>
             <span class="author-badge">
               <i class="fa-solid fa-chart-column"></i> Tableau Public:
-              <a href="https://public.tableau.com/app/profile/atharv.malviya" target="_blank" rel="noopener">{{ author_handle }}</a>
+              <a href="{{ tableau_dashboard_url }}" target="_blank" rel="noopener">{{ author_handle }}</a>
             </span>
             <span class="author-sep">•</span>
             <span class="author-badge">
@@ -338,7 +338,7 @@
           </div>
           <div class="ticker-track-wrap">
             <div class="ticker-track" id="tickerTrack">
-              <span class="ticker-item">Atharv Prakash Malviya: F1 Race Intelligence Dashboard & 9-Scene Story Published</span>
+              <span class="ticker-item">Kushagra Khatri: F1 Race Intelligence Dashboard & 9-Scene Story Published</span>
               <span class="ticker-item">Max Verstappen leads modern Championship with 4,640 career points & 3 World Titles</span>
               <span class="ticker-item">Red Bull Racing leads Constructor Championship with 8,006 accumulated points</span>
               <span class="ticker-item">Lewis Hamilton holds 6 hybrid titles and 4,491 points</span>
@@ -347,7 +347,7 @@
               <span class="ticker-item">6,464 total race outcomes logged across 29 world circuits and 10 competing teams</span>
               <span class="ticker-item">Modern grid reliability benchmark stands at 91.4% race completion rate</span>
               <!-- Repeated for infinite ticker loop -->
-              <span class="ticker-item">Atharv Prakash Malviya: F1 Race Intelligence Dashboard & 9-Scene Story Published</span>
+              <span class="ticker-item">Kushagra Khatri: F1 Race Intelligence Dashboard & 9-Scene Story Published</span>
               <span class="ticker-item">Max Verstappen leads modern Championship with 4,640 career points & 3 World Titles</span>
               <span class="ticker-item">Red Bull Racing leads Constructor Championship with 8,006 accumulated points</span>
               <span class="ticker-item">Lewis Hamilton holds 6 hybrid titles and 4,491 points</span>
@@ -460,18 +460,18 @@
               </div>
               <span class="window-title">FORMULA 1 RACE INTELLIGENCE DASHBOARD | {{ author_name }}</span>
             </div>
-            <span class="window-badge-pill badge-tableau-public">TABLEAU PUBLIC</span>
+            <span class="window-badge-pill badge-tableau-public">TABLEAU CLOUD</span>
           </div>
 
           <!-- Viewport with Live Tableau Embed -->
           <div class="window-viewport" id="dashboardViewport">
             <div class="dashboard-embed-box" id="tableauDashboardContainer">
-              <iframe src="https://public.tableau.com/views/F1RaceIntelligenceDashboard_2/FORMULA1RACEINTELLIGENCEDASHBOARD?:embed=yes&:showVizHome=no&:toolbar=yes&:tabs=no&:showAppBanner=false"
+              <iframe src="{{ tableau_dashboard_embed_url }}"
                       width="100%" height="860" frameborder="0"
                       style="border:none; width:100%; min-height:860px; height:860px; display:block; background:#0a0a0f;"
                       allowfullscreen="true"
                       loading="lazy"
-                      title="Tableau Public Formula 1 Race Intelligence Dashboard"></iframe>
+                      title="Formula 1 Race Intelligence Dashboard - Kushagra Khatri" allow="fullscreen; clipboard-read; clipboard-write"></iframe>
             </div>
           </div>
 
@@ -485,7 +485,7 @@
             </div>
             <div style="display:flex; gap:10px; align-items:center;">
               <a href="{{ tableau_dashboard_url }}" target="_blank" rel="noopener" class="btn-action-outline" id="openExternalDashboard">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i> Open on Tableau Public ↗
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Open on Tableau Cloud ↗
               </a>
               <button class="btn-primary" id="openFullscreenDashboard">
                 <i class="fa-solid fa-expand"></i> Full Screen ↗
@@ -532,12 +532,12 @@
           <!-- Viewport with Live Tableau Embed -->
           <div class="window-viewport" id="storyViewport">
             <div class="dashboard-embed-box" id="tableauStoryContainer">
-              <iframe src="https://public.tableau.com/shared/H8573444D?:embed=yes&:showVizHome=no&:toolbar=yes&:tabs=no&:showAppBanner=false"
+              <iframe src="{{ tableau_story_embed_url }}"
                       width="100%" height="860" frameborder="0"
                       style="border:none; width:100%; min-height:860px; height:860px; display:block; background:#0a0a0f;"
                       allowfullscreen="true"
                       loading="lazy"
-                      title="Tableau Public Formula 1 Story"></iframe>
+                      title="Formula 1 Story (9 Scenes) - Kushagra Khatri" allow="fullscreen; clipboard-read; clipboard-write"></iframe>
             </div>
           </div>
 
@@ -550,7 +550,7 @@
             </div>
             <div style="display:flex; gap:10px; align-items:center;">
               <a href="{{ tableau_story_url }}" target="_blank" rel="noopener" class="btn-action-outline" id="openExternalStory">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i> Open on Tableau Public ↗
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Open on Tableau Cloud ↗
               </a>
               <button class="btn-primary" id="openFullscreenStory">
                 <i class="fa-solid fa-expand"></i> Full Screen ↗
@@ -986,7 +986,7 @@
             <!-- Social Links -->
             <div>
               <div class="contact-socials">
-                <a href="https://public.tableau.com/app/profile/atharv.malviya" target="_blank" rel="noopener" class="social-circle-btn" aria-label="Tableau Public Profile">
+                <a href="{{ tableau_dashboard_url }}" target="_blank" rel="noopener" class="social-circle-btn" aria-label="Tableau Public Profile">
                   <i class="fa-solid fa-chart-column"></i>
                 </a>
                 <a href="https://github.com" target="_blank" rel="noopener" class="social-circle-btn" aria-label="GitHub Repository">

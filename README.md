@@ -1,11 +1,11 @@
 # 🏎️ FORMULA 1 RACE INTELLIGENCE DASHBOARD
 ### High-Performance Motorsport Telemetry & Championship Analytics Engine
-**Author & Lead Architect:** [Atharv Prakash Malviya](https://public.tableau.com/app/profile/atharv.malviya)  
-**Tableau Public Profile:** `atharv malviya`  
-**Published Workbook:** `F1 Race Intelligence Dashboard_2`  
+**Author & Lead Architect:** [Kushagra Khatri](https://prod-in-a.online.tableau.com/#/site/en25cs3090103-eee6cffe8d/views/F1RACEStory/FORMULA1RACEINTELLIGENCEDASHBOARD?:iid=1)  
+**Tableau Public Profile:** `kushagra khatri`  
+**Published Workbook:** `F1RACEStory`  
 
-[![Tableau Public](https://img.shields.io/badge/Tableau_Public-Live_Dashboard-E97627?style=for-the-badge&logo=tableau&logoColor=white)](https://public.tableau.com/views/F1RaceIntelligenceDashboard_2/FORMULA1RACEINTELLIGENCEDASHBOARD?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
-[![Tableau Story](https://img.shields.io/badge/Tableau_Story-9--Scene_Narrative-22C55E?style=for-the-badge&logo=tableau&logoColor=white)](https://public.tableau.com/shared/H8573444D?:display_count=n&:origin=viz_share_link)
+[![Tableau Public](https://img.shields.io/badge/Tableau_Cloud-Live_Dashboard-E97627?style=for-the-badge&logo=tableau&logoColor=white)](https://prod-in-a.online.tableau.com/#/site/en25cs3090103-eee6cffe8d/views/F1RACEStory/FORMULA1RACEINTELLIGENCEDASHBOARD?:iid=1)
+[![Tableau Story](https://img.shields.io/badge/Tableau_Story-9--Scene_Narrative-22C55E?style=for-the-badge&logo=tableau&logoColor=white)](https://prod-in-a.online.tableau.com/#/site/en25cs3090103-eee6cffe8d/views/F1RACEStory/Formula1RaceIntelligenceFromGlobalOverviewtoChampionshipSuccess?:iid=2)
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![Flask](https://img.shields.io/badge/Flask-Web_Service-000000?style=for-the-badge&logo=flask&logoColor=white)](https://palletsprojects.com/p/flask/)
 [![Theme](https://img.shields.io/badge/Theme-F1_Dark_Obsidian_%26_Crimson-E10600?style=for-the-badge)](#)
@@ -23,9 +23,9 @@ Combining **Tableau Public**'s analytical power with a responsive **Python Flask
 ## 📊 Live Tableau Public Workbooks
 
 * 🏁 **Interactive Telemetry Dashboard:**  
-  [FORMULA 1 RACE INTELLIGENCE DASHBOARD](https://public.tableau.com/views/F1RaceIntelligenceDashboard_2/FORMULA1RACEINTELLIGENCEDASHBOARD?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+  [FORMULA 1 RACE INTELLIGENCE DASHBOARD](https://prod-in-a.online.tableau.com/#/site/en25cs3090103-eee6cffe8d/views/F1RACEStory/FORMULA1RACEINTELLIGENCEDASHBOARD?:iid=1)
 * 📖 **9-Scene Championship Narrative Story:**  
-  [Formula 1 Race Intelligence: From Global Overview to Championship Success](https://public.tableau.com/shared/H8573444D?:display_count=n&:origin=viz_share_link)
+  [Formula 1 Race Intelligence: From Global Overview to Championship Success](https://prod-in-a.online.tableau.com/#/site/en25cs3090103-eee6cffe8d/views/F1RACEStory/Formula1RaceIntelligenceFromGlobalOverviewtoChampionshipSuccess?:iid=2)
 
 ---
 
@@ -82,7 +82,7 @@ Architecture Diagram
 |  - Logical Layer Relationships (circuit_id, race_id, season, driver)           |
 |  - Calculated Fields: [DNF Count], [Points Cumulative], [Completion Rate %]   |
 |  - Parameters: [Top N Parameter] (Integer 1-20, default: 10)                  |
-|  - Published to Tableau Public: F1 Race Intelligence Dashboard_2               |
+|  - Published to Tableau Public: F1RACEStory               |
 +-------------------------------------------------------------------------------+
                                       │
                                       ▼
@@ -160,12 +160,12 @@ Simply double-click `index.html` in Windows Explorer or open it in any modern br
 
 ## 👤 Author & Credits
 
-* **Author & Lead Developer:** **Atharv Prakash Malviya**
-* **Tableau Public:** [@atharv malviya](https://public.tableau.com/app/profile/atharv.malviya)
+* **Author & Lead Developer:** **Kushagra Khatri**
+* **Tableau Public:** [@kushagra khatri](https://prod-in-a.online.tableau.com/#/site/en25cs3090103-eee6cffe8d/views/F1RACEStory/FORMULA1RACEINTELLIGENCEDASHBOARD?:iid=1)
 * **Academic Submission:** October 2026
 
 ---
 
 ## ⚖️ Educational Disclaimer
 
-*This project is an independent educational and academic analytics platform developed by Atharv Prakash Malviya. Formula 1, F1, FIA, and related marks are trademarks of Formula One Licensing B.V. Not affiliated with or endorsed by Formula 1 companies.*
+*This project is an independent educational and academic analytics platform developed by Kushagra Khatri. Formula 1, F1, FIA, and related marks are trademarks of Formula One Licensing B.V. Not affiliated with or endorsed by Formula 1 companies.*
